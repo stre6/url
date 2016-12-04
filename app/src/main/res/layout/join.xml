@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="인평세미나"
+        android:textSize="40dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:id="@+id/txt1"/>
+<EditText
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:id="@+id/login"
+    android:layout_centerHorizontal="true"
+    android:hint="ID"
+    android:layout_marginTop="151dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:layout_below="@+id/login"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="로그인"
+        android:id="@+id/lgbtn"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/password"
+        android:layout_toStartOf="@+id/sigbtn"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="회원가입"
+        android:id="@+id/sigbtn"
+        android:textAllCaps="false"
+        android:layout_alignTop="@+id/lgbtn"
+        android:layout_alignEnd="@+id/password"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="관리자 로그인"
+        android:id="@+id/admin"
+        android:textAllCaps="false"
+        android:layout_below="@+id/lgbtn"
+        android:layout_alignStart="@+id/lgbtn" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="예약현황"
+        android:id="@+id/btn7"
+        android:textAllCaps="false"
+        android:layout_below="@id/admin"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
